@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: #311b1b;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        height: 700px;
+        font-family: Arial, sans-serif;
+        flex-direction:column;
+       }
+       .keyboard {
+        background-color: rgb(153, 111, 111);
+        padding: 20px;
+        border-radius: 20px;    
+       }
+
+       .row{
+        display: flex;
+        margin-bottom: 10px;
+       }
+
+       .key{
+        width:50px;
+        height:50px;
+        background:white;
+        border:2px solid #888;
+        border-radius:30px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-right: 10px;
+        box-shadow: rgba(255, 46, 46, 0.17) 0px -23px 25px 0px inset, rgba(11, 98, 248, 0.15) 0px -36px 30px 0px inset, rgba(159, 23, 232, 0.1) 0px -79px 40px 0px inset, rgba(232, 19, 136, 0.06) 0px 2px 1px, rgba(233, 147, 9, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+       }
+       .keyBackspace{
+        width:120px;
+        background:white;
+        border:2px solid #888;
+        display:flex;
+        border-radius:25px;
+        justify-content:center;
+        align-items:center;  
+        margin-right: 5px;  
+       }
+       .keyTab{
+        width:90px;
+        background:white;
+        border:2px solid #888;
+        display:flex;
+        border-radius:25px;
+         justify-content:center;
+        align-items:center;  
+         margin-right: 5px;  
+       }
+       .keyPageup{
+        width:80px;
+        background:white;
+         display:flex;
+        border:2px solid #888;
+        border-radius:20px;
+         justify-content:center;
+        align-items:center;  
+         margin-right: 5px;  
+         box-shadow: 0 0 0 3px #168ae9;
+       }
+       .keyCapsLock{
+        width:100px;
+        background:white;
+         display:flex;
+        border:2px solid #888;
+        border-radius:20px;
+        justify-content:center;
+        align-items:center; 
+         margin-right: 5px;   
+         box-shadow: 0 0 0 3px #FBBF24;
+       }
+       .keyEnter{
+        width:120px;
+        background:white;
+        display:flex;
+        border:2px solid #888;
+        border-radius:20px;
+        justify-content:center;
+        align-items:center; 
+        margin-right: 10px;  
+        box-shadow: 0 0 0 3px #0ad92c; 
+       }
+    .keyPagedown{
+        width:90px;
+        background:white;
+         display:flex;
+        border:2px solid #888;
+        border-radius:20px;
+         justify-content:center;
+        align-items:center;  
+         margin-right: 2px;  
+         box-shadow: 0 0 0 3px #3624fb;
+       }
+       .keyShift{
+        width:135px;
+        background:white;
+         display:flex;
+        border:2px solid #888;
+        border-radius:20px;
+         justify-content:center;
+        align-items:center; 
+         margin-right: 5px;   
+         box-shadow: 0 0 0 3px #fb2424;
+       }
+       .keySpace{
+        width:420px;
+        background:white;
+         display:flex;
+        border:2px solid #888;
+        border-radius:20px;
+        justify-content:center;
+        align-items:center;  
+         margin-right: 10px;  
+         box-shadow: 0 0 0 3px #2ffb24;
+       }
+       .keyDelete{
+        width:80px;
+        background:white;
+         display:flex;
+        border:2px solid #888;
+        border-radius:20px;
+         justify-content:center;
+        align-items:center;  
+         margin-right: 5px;  
+         box-shadow: 0 0 0 3px #f30606;
+       }
+       .keyCtrl{
+        width:80px;
+        background:white;
+         display:flex;
+        border:2px solid #888;
+        border-radius:20px;
+         justify-content:center;
+        align-items:center;  
+         margin-right: 5px;
+         box-shadow: 0 0 0 3px #dab10d;
+       }
+
+    </style>
+</head>
+<body>
+    <h1 style = "margin: 0 auto; text-align: center; color: #faf5f5;">Keyboard Layout</h1>
+    <div class = "keyboard">
+            <div class = "row">
+                <div class = "key">Esc</div>
+                <div class = "key">F1</div>
+                <div class = "key">F2</div>
+                <div class = "key">F3</div>
+                <div class = "key">F4</div>
+                <div class = "key">F5</div>
+                <div class = "key">F6</div>
+                <div class = "key">F7</div>
+                <div class = "key">F8</div>
+                <div class = "key">F9</div>
+                <div class = "key">F10</div>
+                <div class = "key">F11</div>
+                <div class = "key">F12</div>
+                <div class = "key">Insert</div>
+                <div class = "keyDelete">Delete</div>
+                <div class = "key">Print</div>
+            </div>
+
+            <div class = "row">
+                <div class = "key">~</div>
+                <div class = "key">1</div>
+                <div class = "key">2</div>
+                <div class = "key">3</div>
+                <div class = "key">4</div>
+                <div class = "key">5</div>
+                <div class = "key">6</div>
+                <div class = "key">7</div>
+                <div class = "key">8</div>
+                <div class = "key">9</div>
+                <div class = "key">10</div>
+                <div class = "key">-</div>
+                <div class = "key">=</div>
+                <div class = "keyBackspace">Backspace</div>
+                <div class = "key">Home</div>
+            </div>
+
+            <div class = "row">
+                <div class = "keyTab">Tab</div>
+                <div class = "key">Q</div>
+                <div class = "key">W</div>
+                <div class = "key">E</div>
+                <div class = "key">R</div>
+                <div class = "key">T</div>
+                <div class = "key">Y</div>
+                <div class = "key">U</div>
+                <div class = "key">I</div>
+                <div class = "key">O</div>
+                <div class = "key">P</div>
+                <div class = "key">{</div>
+                <div class = "key">}</div>
+                <div class = "key">\</div>
+                <div class = "keyPageup">Page Up</div>
+            </div>
+
+            <div class = "row">
+                <div class = "keyCapsLock">Caps Lock</div>
+                <div class = "key">A</div>
+                <div class = "key">S</div>
+                <div class = "key">D</div>
+                <div class = "key">F</div>
+                <div class = "key">G</div>
+                <div class = "key">H</div>
+                <div class = "key">J</div>
+                <div class = "key">K</div>
+                <div class = "key">L</div>
+                <div class = "key">;</div>
+                <div class = "key">"</div>
+                <div class = "keyEnter">Enter</div>
+                <div class = "keyPagedown">Page Down</div>
+            </div>
+
+            <div class = "row">
+                <div class = "keyShift">Shift</div>
+                <div class = "key">Z</div>
+                <div class = "key">X</div>
+                <div class = "key">C</div>
+                <div class = "key">V</div>
+                <div class = "key">B</div>
+                <div class = "key">N</div>
+                <div class = "key">M</div>
+                <div class = "key">,</div>
+                <div class = "key">.</div>
+                <div class = "key">?</div>
+                <div class = "keyShift">Shift</div>
+                <div class = "key">↑</div>
+                <div class = "key">End</div>
+            </div>
+
+            <div class = "row">
+                <div class = "keyCtrl">Ctrl</div>
+                <div class = "key">Win</div>
+                <div class = "key">Alt</div>
+                <div class = "keySpace">Space</div>
+                <div class = "key">Alt</div>
+                <div class = "key">Win</div>
+                <div class = "keyCtrl">Ctrl</div>
+                <div class = "key">←</div>
+                <div class = "key">↓</div>
+                <div class = "key">→</div>
+            </div>
+    </div>
+</body>
+</html>
