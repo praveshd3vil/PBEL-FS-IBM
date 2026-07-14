@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(246, 243, 236);
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(42, 63, 116);
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    /* border: 1px solid red; */
+    color: white;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu{
+    /* border: 1px solid blue; */
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#banner {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#banner>div {
+    /* border: 1px solid blue; */
+    width: 45%;
+    text-align: center;
+}
+
+#child1>h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#child1>h1>span {
+    color: rgb(159, 231, 16);
+}
+#child2{
+    margin: 20px auto;
+    /* border: 1px solid green; */
+}
+#grid {
+    /* border: 1px sloid green; */
+    width: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+#price {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#price>div {
+    width: 20%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#price>div>button {
+    padding: 10px 30px;
+    background-color: rgb(85, 172, 3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#price>div>h2 {
+    font-size: 30px;
+}
+
+#price>div>h3 {
+    font-size: 40px;
+    color: rgb(85, 172, 3);
+}
+
+footer {
+    margin-top: 10px;
+    align-items: flex-start;
+    background-color: rgb(42, 63, 116);
+    color: rgb(246, 243, 236);
+    display: flex;
+    padding: 10px;
+    gap: 250px;
+}
+
+#service,
+#contact,
+#logo {
+    display: flex;
+    flex-direction: column;
+}
+
+#service ul,
+#contact ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+#about {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mission,
+#aboutservices,
+#stats {
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicesContainer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#stats {
+    display: flex;
+    justify-content: space-between;
+}
+#contact{
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    display: flex;
+}
+#contactContainer{
+    width: 30%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#info{
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(42, 63, 116);
+    color: white;
+    justify-content: space-around;
+    gap: 80px;
+}
