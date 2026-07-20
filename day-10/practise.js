@@ -70,7 +70,7 @@ let vowels1 = ['a', 'e', 'i', 'o', 'u'];
 let count = 0;
 
 for (let i = 0; i < str.length; i++) {
-    if (vowels.includes(str[i])) {
+    if (vowels1.includes(str[i])) {
         count++;
     }
 }
@@ -100,8 +100,8 @@ for (let i = 0; i < str.length; i++)
     let str4 = "Hello";
     let reverse = "";
 
-    for (let i = str.length - 1; i >= 0; i--) {
-        reverse += str[i];
+    for (let i = str4.length - 1; i >= 0; i--) {
+        reverse += str4[i];
     }
 
     console.log(reverse);
@@ -110,14 +110,14 @@ for (let i = 0; i < str.length; i++)
 
     // 1. Using a for loop, print numbers from 1 to 20.
     for (let i = 1; i <= 20; i++) {
-        console.log(i);
+        console.log("1-20 using for loop: ",(i));
     }
     // 2. Using a while loop, print numbers from 20 to 1.
-    let i = 20;
+    let i1 = 20;
 
-    while (i >= 1) {
-        console.log(i);
-        i--;
+    while (i1 >= 1) {
+        console.log("20-1 using while loop: ",i1);
+        i1--;
     }
     // 3. Print the multiplication table of 7.
     let n2 = 7;
@@ -128,7 +128,7 @@ for (let i = 0; i < str.length; i++)
     // 4. Print all even numbers from 1 to 50.
     for (let i = 1; i <= 50; i++) {
         if (i % 2 === 0) {
-            console.log(i);
+            console.log("even number from 1-50:",i);
         }
     }
     // 5. Find the sum of all numbers from 1 to 100.
