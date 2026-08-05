@@ -1,0 +1,39 @@
+const express = require("express");
+const cors = require("cors");
+const { connection } = require("./config/db");
+const { registration, userLogin , changepasswordForm, getAllUsers} = require("./controller/user.controller");
+const { authCheck } = require("./middleware/auth");
+const { userProfile } = require("./controller/cart.controller");
+
+require('dotenv').config()
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+
+app.get("/", (req, res) => {
+    res.send(`<h2 style="color:teal; text-align:center">Welcome to FS Server</h2>`);
+});
+
+app.use("/api/registration", registration);
+app.use("/api/login", userLogin);
+app.use("/api/user", authCheck, userProfile)
+app.use("/api/change-password", authCheck, changepasswordForm)
+app.use("/api/users", getAllUsers)
+
+
+const PORT = process.env.PORT;
+
+app.listen(PORT, async() => {
+    try {
+        await connection
+        console.log("connection created between server and DB")
+    } catch (error) {
+        console.log(error)
+    }
+    console.log("Server is running on port", PORT)
+})
+
+
+//MVC structure

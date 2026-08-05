@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            /* border: 1px solid red; */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            text-align: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        #parent>div{
+            border: 1px solid blue;
+            width: 45%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Single product</h2>
+    <div id = "parent">
+        <div id = "leftchild"></div>
+        <div id = "rightchild"></div>
+    </div>
+</body>
+<script src="singleProduct.js"></script>
+</html>
