@@ -12,7 +12,7 @@ registrationForm.addEventListener("submit", async (e) => {
         fullName, email, password, phoneNumber
     }
 
-    const response = await fetch("http://localhost:8000/api/registration", {
+    const response = await fetch("https://pbel-fs-ibm.onrender.com/api/registration", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

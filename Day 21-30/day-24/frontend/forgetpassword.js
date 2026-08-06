@@ -20,7 +20,7 @@ forgetPasswordForm.addEventListener("submit", async (e) => {
     //     return;
     // }
 
-    const response = await fetch("http://localhost:8000/api/forget-password", {
+    const response = await fetch("https://pbel-fs-ibm.onrender.com/api/forget-password", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
