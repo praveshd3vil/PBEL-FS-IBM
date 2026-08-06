@@ -1,0 +1,6 @@
+# Project-level settings
+/.tgitconfig
+
+# Environment variables
+.env
+.env.*
